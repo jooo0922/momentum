@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="clock.js" defer></script>
+    <script src="greeting.js" defer></script>
+    <script src="todo.js" defer></script>
+    <script src="bg.js" defer></script>
+    <script src="weather.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Clock -->
+    <!-- 
+    js에서 쓸 클래스명에는 js를 붙일 것.
+    한 태그 안에 js에 쓰는 클래스명과 css에 쓰는 클래스명 동시에 할당 가능! 
+    -->
+    <div class="js-clock"> 
+        <h1>
+            00:00
+        </h1>
+    </div>
+
+    <!-- Greeting -->
+    <!--
+    input을 form에 넣게 되면
+    input값을 입력하고 enter을 누르면
+    form을 제출(submit)한다는 걸 의미함.
+    
+    그래서 form안에 넣은 것!
+    
+    default에 의해서, form을 제출하면
+    이걸 다른 곳으로 보내려고 하는 성질이 있음.
+    -->
+    <form action="" class="js-form form">
+        <input type="text" placeholder="What is your name?"/>
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+
+    <!-- Todo List -->
+    <form action="" class="js-toDoForm">
+        <input type="text" placeholder="Write a to do"/>
+    </form>
+    <ul class="js-todoList">
+        
+    </ul>
+    <span class="js-weather"></span>
+
+</body>
+</html>
